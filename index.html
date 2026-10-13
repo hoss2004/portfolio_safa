@@ -1,4 +1,5 @@
 <title>Maître Safa Chalbi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Cormorant:ital,wght@0,500;1,400;1,500&family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap">
@@ -187,6 +188,50 @@ footer p{margin:0;color:var(--muted);font-size:.85rem}
 
 .reveal{animation:rise .9s ease both}
 @keyframes rise{from{transform:translateY(16px)}to{transform:none}}
+@media (max-width:600px){
+  :root{--gutter:18px}
+  body{font-size:16px;line-height:1.58;overflow-x:hidden}
+  [dir="rtl"] body{font-size:17px}
+  .top .wrap{min-height:64px;padding-block:10px}
+  .brand .mono{width:58px}
+  .lang button{min-width:42px;padding:6px 11px}
+  section{padding-block:46px}
+  .hero{padding-block:28px 54px}
+  .hero .wrap{gap:24px}
+  .hero-text,
+  [dir="rtl"] .hero-text{justify-self:stretch;text-align:start}
+  [dir="rtl"] .hero-text{text-align:right}
+  .hero .mono{width:128px}
+  .hero h1{font-size:clamp(2.05rem,13vw,3rem);letter-spacing:.12em;overflow-wrap:anywhere}
+  [dir="rtl"] .hero h1{font-size:clamp(2.5rem,14vw,3.35rem)}
+  .rule{margin-block:12px 16px}
+  .rule::before{width:52px}
+  .lead{font-size:1.28rem;max-width:100%;margin-bottom:24px}
+  .ctas{display:grid;grid-template-columns:1fr;gap:10px}
+  .btn{width:100%;justify-content:center;padding:13px 16px}
+  .portrait{width:min(315px,88vw)}
+  .portrait::before{inset:-10px -10px 20px 20px}
+  [dir="rtl"] .portrait::before{inset:-10px 20px 20px -10px}
+  .tag{inset-inline-start:50%;inset-inline-end:auto;bottom:18px;transform:translateX(-50%);width:min(270px,88vw);max-width:none}
+  [dir="rtl"] .tag{inset-inline-start:50%;inset-inline-end:auto;transform:translateX(-50%)}
+  .domains-head{display:block;margin-bottom:24px}
+  .domains-head p{margin-top:10px;max-width:100%}
+  .panel[aria-expanded="true"] .body{padding:66px 18px 20px}
+  .panel .body h3{font-size:1.8rem}
+  .panel .body p{font-size:.96rem}
+  .chips li{font-size:.8rem;padding:4px 10px}
+  .step{padding-top:48px}
+  .contact .intro{max-width:100%}
+  .composer{border-radius:18px;padding:18px}
+  .topics button{flex:1 1 auto}
+  .coord{align-items:flex-start;gap:8px;flex-wrap:wrap}
+  .coord .k{width:100%;font-size:.78rem}
+  .copy{margin-inline-start:auto}
+  .map-card iframe{height:220px}
+  .map-actions{justify-content:stretch}
+  footer .wrap{justify-content:center;text-align:center}
+  .fab{width:52px;height:52px;inset-inline-end:14px}
+}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 
